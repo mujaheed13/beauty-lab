@@ -7,6 +7,7 @@
     <title>Beauty Lab® | Dermatologists</title>
     <link rel="icon" type="image/x-icon" href="assets\beauty-lab_favicon.png" />
     <link rel="stylesheet" href="styles/top.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/home-page.css">
   </head>
   <body>
@@ -38,7 +39,7 @@
           />
         </svg>
       </p>
-        <p>Sign in
+        <p id="signin">Sign in
           <svg
           xmlns="http://www.w3.org/2000/svg"
           height="14"
@@ -72,17 +73,103 @@
         English</p>
       </div>
       </div>
+
+      <!-- login-popup -->
+      <div id="login-popup">
+        <form id="login-form">
+          <label>Email</label>
+          <input type="email" id="log-email">
+          <label >Password</label>
+          <input type="password" id="log-pass">
+          <p>Don't have an account? <a href="register.html">Register</a></p>
+          <input type="submit" value="SIGN IN">
+        </form>
+      </div>
+
       <!-- nav -->
       <div id="nav">
-        <p>SKINCARE</p>
-        <p>HAIRCARE</p>
+        <p id="skincareBtn">SKINCARE</p>
+        <p id="haircareBtn">HAIRCARE</p>
         <p>BEST SELLERS</p>
         <p>SPECIAL OFFERS</p>
         <p>ABOUT</p>
         <p>PERKS PROGRAM</p>
         <p>BECOME A CONSULTANT</p>
       </div>
-    </div>
+
+      <div id="skincare">
+        <div>
+          <p>SHOP BY CATEGORY</p>
+          <button>Skincare Regimens</button>
+          <button>Lash & Brow</button>
+          <button>Eye Creams & Treatments</button>
+          <button>Face Serums and Treatments</button>
+          <button>Face Masks</button>
+          <button>Moisturizer</button>
+          <button>Cleansers & Makeup Removers</button>
+          <button>Toners</button>
+          <button>Sun Protection</button>
+          <button>Tools & Accessories</button>
+          <button>Hand & body</button>
+          <button>Shop All Skincare</button>
+        </div>
+        
+        <div>
+          <p>SHOP BY CONCERN</p>
+          <button>Anti-Aging</button>
+          <button>Acne, Pore & Blackheads</button>
+          <button>Dark Spots & Uneven Skin Tone</button>
+          <button>Sensitivity & Visible Redness</button>
+          <button>Dull and Tired Skin</button>
+          <button>Dry Skin</button>
+          <button>Teen Acne</button>
+        </div>
+
+        <div>
+          <p>SHOP BY PRODUCT LINE</p>
+        <button>Redefine</button>
+        <button>Reverse</button>
+        <button>Unblemish</button>
+        <button>Soothe</button>
+        <button>Recharge</button>
+        <button>Spotless</button>
+        <button>Enhancements</button>
+        <button>Pro Skincare Tools</button>
+        <button>Essentials</button>
+        </div>
+        
+      </div>
+
+      
+      <div id="haircare">
+        <div>
+          <p>SHOP BY CATEGORY</p>
+          <button>Haircare Regimens</button>
+          <button>Shampoos</button>
+          <button>Conditioners</button>
+          <button>Regimen Treatments</button>
+          <button>Styling Treatments</button>
+          <button>Shop All Haircare</button>
+        </div>
+        
+        <div>
+          <p>SHOP BY CONCERN</p>
+          <button>Smooth + Shine</button>
+          <button>Volume + Fullness</button>
+          <button>Waves + Curls</button>
+          <button>Refresh + Revive</button>
+        </div>
+
+        <div>
+          <p>SHOP BY PRODUCT LINE</p>
+        <button>Smooth+</button>
+        <button>Volume+</button>
+        </div>
+        
+      </div>
+
+      
+
     <!-- intro-section -->
     <div id="intro-section">
       <div>
@@ -94,6 +181,7 @@
         <video autoplay loop src="https://www.rodanandfields.com/en-us/_ui/videos/dynamicupload/comp_00171016-desktop-en-us-15820196216862-1666850649393.mp4"></video>
       </div>
     </div>
+
     <!-- offers-section -->
     <div id="offers-section">
       <div>
@@ -112,6 +200,7 @@
         <h2>Eye Bestsellers +  Free Gifts</h2>
       </div>
     </div>
+
     <div id="mid-section-1">
       <div>
         <img src="https://www.rodanandfields.com/en-us/medias/Skincare.jpg?context=bWFzdGVyfHJvb3R8MTQwMzU3fGltYWdlL2pwZWd8aDI3L2hkZS8xNTg4OTM4ODgzMDc1MC5qcGd8YTNiNTNmYTgzZmRjMzM5MzYwYjNhYjAwYTg3MDE1MzI3MTNhYzI4ZjUyZTBhM2VkNmUxMWFiOWY3NmQyNDgyZQ" alt="">
@@ -136,12 +225,14 @@
         <p>Lightweight dry shampoo balances the scalp and absorbs excess oil, sweat + odor for revived, refreshed hair between washes.</p>
         <h2>$39</h2>
         <p>Retail Price</p>
+        <span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <p>5.0</p>
+      </span>
         <button>ADD TO BAG</button>
       </div>
 
@@ -151,12 +242,14 @@
         <p>Our most comprehensive anti-aging serum features RF TriEnergy Complex that energizes millions of surface skin cells by 200% to address all key signs of skin aging.</p>
         <h2>$175</h2>
         <p>Retail Price</p>
+        <span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <p>4.5</p>
+      </span>
         <button>ADD TO BAG</button>
       </div>
 
@@ -166,12 +259,14 @@
         <p>#1 Premium Lash Serum in the U.S. in 2021!* Our famous lash conditioning serum is applied nightly to promote the appearance of longer, stronger and darker-looking lashes (or brows!)</p>
         <h2>$155</h2>
         <p>Retail Price</p>
+        <span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <p>4.6</p>
+      </span>
         <button>ADD TO BAG</button>
       </div>
 
@@ -181,12 +276,14 @@
         <p>Younger-looking eyes in a wink! Our intensive anti-aging eye cream visibly firms + lifts to improve the look of fine lines, wrinkles, sagging + crow’s feet.</p>
         <h2>$70</h2>
         <p>Retail Price</p>
+      <span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <p>4.6</p>
+      </span>
         <button>ADD TO BAG</button>
       </div>
 
@@ -196,12 +293,14 @@
         <p>Quench thirsty skin. Instantly boosts hydration levels by 200% + locks in moisture on the surface of the skin. Add to any Regimen for even better results.</p>
         <h2>$112</h2>
         <p>Retail Price</p>
+      <span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <p>4.8</p>
+      </span>
         <button>ADD TO BAG</button>
       </div>
 
@@ -211,12 +310,14 @@
         <p>Wake up to vibrant skin! Plump fine lines + visibly lift sagging skin with the most potent form of Vitamin A you can get without a prescription.</p>
         <h2>$102</h2>
         <p>Retail Price</p>
+      <span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <p>4.8</p>
+      </span>
         <button>ADD TO BAG</button>
       </div>
 
@@ -226,12 +327,14 @@
         <p>Wake up to younger-looking eyes. Our illuminating gel cream reduces visible dark circles + under-eye puffiness over time.</p>
         <h2>$72</h2>
         <p>Retail Price</p>
+      <span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <p>4.5</p>
+      </span>
         <button>ADD TO BAG</button>
       </div>
 
@@ -241,12 +344,14 @@
         <p>Instantly firm, tighten + smooth for a youthful look in just 5 minutes*, plus further reduce visible signs of aging in targeted area in just 4 weeks!</p>
         <h2>$105</h2>
         <p>Retail Price</p>
+      <span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <p>3.1</p>
+      </span>
         <button>ADD TO BAG</button>
       </div>
 
@@ -256,12 +361,14 @@
         <p>All-over hydration. Get younger-looking, younger-acting skin with our breakthrough body moisturizer that instantly + continuously hydrates.</p>
         <h2>$66</h2>
         <p>Retail Price</p>
+      <span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <p>4.9</p>
+      </span>
         <button>ADD TO BAG</button>
       </div>
 
@@ -271,15 +378,123 @@
         <p>Meet our best selling scrub. Gentle face + body scrub exfoliates away dead skin cells for smoother, brighter, more vibrant-looking skin after just one use.</p>
         <h2>$83</h2>
         <p>Retail Price</p>
+      <span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
         <p>4.8</p>
+      </span>
         <button>ADD TO BAG</button>
       </div>
     </div>
-    <img src="https://www.rodanandfields.com/en-us/medias/ENPS125-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODU1NXxpbWFnZS9wbmd8aW1hZ2VzL2hjMS9oZDQvMTQ1MzIxNjgyMjA3MDIucG5nfDY5ZjgwZTM5YjdmZDk3MDliMzRmNmFiYzA1YTZlODg3ODExY2NjMzE2ODI1M2Q2MzZkODljMjY2ZjUwNWZkMDk" alt="">
+
+    <div id="derm">
+      <h1>derm-designed skin + hair care</h1>
+    </div>
+
+      <div id="mid-section-2">
+
+        <div>
+          <img src="https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA" alt="">
+          <p>Lines , Wrinkles or Loss of Firmness</p>
+        </div>
+
+        <div>
+          <img src="https://www.rodanandfields.com/en-us/medias/SOSS050-Regimen-Explainer-Step4-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wzNjYwNHxpbWFnZS9wbmd8aW1hZ2VzL2g2ZS9oNzcvMTM0MjgwMjg4NjY1OTAucG5nfGZiODQ3NmM2ZGFhMTY4ZmUyMTk1MmVhNzg2ZmRmNjUyMWYxZTZjYjk0Y2I2ZWU2ZjdlZjcxOWRhMTc5ZWQ2ZTc" alt="">
+          <p>Adult Acne + Visible Signs of Aging</p>
+        </div>
+
+        <div>
+          <img src="https://www.rodanandfields.com/en-us/medias/SOWA125-Regimen-Explainer-Step1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w0MjgzNnxpbWFnZS9wbmd8aW1hZ2VzL2g2My9oOTUvMTM0MjgwMjU5ODMwMDYucG5nfDY0OWEyMzA0Mzg3YTE0YjlhM2NiYTUxOGM3YWQ3ZGVmYWNkOGIyNmJkMzFlNzNmZGM3NDY5OGFjY2ZiMDlkYjY" alt="">
+          <p>Discoloration or Uneven Tone</p>
+        </div>
+
+        <div>
+          <img src="https://www.rodanandfields.com/en-us/medias/SOWA125-SOTT050-SOMO050-SOSS050-SOOTHE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MDc1MHxpbWFnZS9wbmd8aW1hZ2VzL2g5Zi9oYWMvMTM3NTgzODUxMjc0NTQucG5nfGFmOTE5ZGY1MjdhZmFkNDhhNzNiOTkyYTYzODAxNzI4OTE3ZGQ5Zjk3YzRlOGRlNTIzYzU3MzZlMTQzNGEzNTI" alt="">
+          <p>Redness, Dryness or Sensitivity</p>
+        </div>
+       
+        <div>
+          <img src="https://www.rodanandfields.com/en-us/medias/HSMRG001-400x400-category-1.png?context=bWFzdGVyfGltYWdlc3wyMjc5NHxpbWFnZS9wbmd8aW1hZ2VzL2g1ZC9oYTgvMTU4ODA4MTEyNDk2OTQucG5nfDNjYTkwNDcyOTA0ODYyN2QyZTYzNWQ5OGExOGMwZjQwNmZiYTZlMjA4NGVjZTkzZjUxZjQ2MjgyMzgwOWE4N2E" alt="">
+          <p>Dry, Frizzy, Dull Hair with Damage or Breakage</p>
+        </div>
+
+        <div>
+          <img src="https://www.rodanandfields.com/en-us/medias/HVLRG001-400x400-category-1.png?context=bWFzdGVyfGltYWdlc3wyMDQxN3xpbWFnZS9wbmd8aW1hZ2VzL2hlOS9oNTUvMTU4ODA4MTIwNjg4OTQucG5nfDk5NDY3YzcwOTlkMDg3ZjAxMGM3NTY4ZDdmZDMyNjViYmEzN2NhNDViMjU3NTNlNzE5ODQyNTEwZDJkNzUxMzI" alt="">
+          <p>Thin Flat Hair with Damage or Breakage</p>
+        </div>
+      </div>
+
+      <div id="consl">
+        <div>
+          
+            <h2>need a skin or hair consultation?</h2>
+         
+
+            <ul>
+              <li>Get customized product recommendations </li>
+              <li> Learn more about our products</li>
+              <li>Receive ongoing skin + hair care advice</li>
+            </ul>
+
+
+            <button>FIND A CONSULTANT</button>
+  
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div>
+          <div>
+            <h3>ABOUT Beauty Lab</h3>
+            <p>Press Room</p>
+            <p>Company Info</p>
+            <p>Executive Team</p>
+            <p>Careers</p>
+            <p>R+F Recycling Program</p>
+            <p>Blog</p>
+          </div>
+          <div>
+            <h3>HELP</h3>
+            <p>Product & Help Center</p>
+            <p>Shipping</p>
+            <p>Satisfaction Guarantee</p>
+            <p>Promotional Terms & Conditions</p>
+            <p>Beauty Lab FAQs</p>
+            <p>Klarna</p>
+            <p>Site Map</p>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div id="social">
+          <div>
+          <h2>Let's Get Social</h2>
+        </div>
+          <div>
+
+          <a href="https://www.linkedin.com/in/mohammad-mujaheed-a86801218" target="_blank"><img src="assets/2959749_facebook_icon.png" alt="">
+          </a>
+
+          <a href="https://instagram.com/mujaheed_13?igshid=YmMyMTA2M2Y=" target="_blank">
+            <img src="assets/2959748_instagram_photo_share_icon.png" alt="">
+          </a>
+
+          <a href="https://youtube.com/channel/UCGzO4S7hCq1Asp4_8LIDFtA" target="_blank">
+            <img src="assets/2959742_broadcast_google_streaming_video_youtube_icon.png" alt="">
+          </a>
+          
+          <a href="https://github.com/mujaheed13" target="_blank">
+            <img src="assets/2959740_bird_news_tweet_twitter_icon.png" alt="">
+          </a>
+        </div>
+        </div>
+      </footer>
+
   </body>
+  <script src="scripts/home-page.js"></script>
+  <script src="scripts/top.js"></script>
 </html>

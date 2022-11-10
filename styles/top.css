@@ -22,6 +22,7 @@ body{
     color: rgb(46, 45, 45);
 }
 
+
 /* logo-section */
 #logo-section {
     display: flex;
@@ -31,16 +32,9 @@ body{
     font-size: 13px;
 }
 
-#nav{
-    margin: auto;
-    display: flex;
-    width: 70%;
-    justify-content: space-around;
-    font-size: 11px;
-    padding: 12px 0px;
-}
 
-#logo-section>img:nth-child(2){
+
+#logo{
     height: 70px;
 }
 
@@ -56,4 +50,121 @@ body{
 
 #btns img{
     width: 25px;
+}
+
+#nav{
+    margin: auto;
+    display: flex;
+    width: 70%;
+    height: 50px;
+    justify-content: space-around;
+    font-size: 11px;
+    padding: 12px 0px 0px 0px;
+}
+
+#nav>p{
+    padding-top: 4px;
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+}
+
+#nav>p::after{
+    content: '';
+    display: block;
+    position: relative;
+    bottom: -20px;
+    width: 0%;
+    transition: 0.4s;
+}
+
+#nav>p:hover::after{
+    height: 2px;
+    width: 100%;
+    background-color: rgb(81, 180, 255);
+}
+
+
+#skincare, #haircare{
+ display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    opacity: 90%;
+    height: 0px;
+    visibility: hidden;
+    transition: 1s;
+    padding-bottom: 20px;
+}
+
+#skincare>div, #haircare>div{
+  display: flex;
+  flex-direction: column;
+    width: 30%;
+    text-align: left;
+}
+
+#skincare>div button, #haircare>div button{
+    text-align: left;
+    margin: 3px 0px;
+    background-color: white;
+    background: fixed;
+    border: none;
+    width: fit-content;
+    padding: 2px 0px ;
+
+}
+
+#skincare button::after, #haircare button::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    transition: 0.4s;
+}
+
+#skincare button:hover::after, #haircare button:hover::after{
+    height: 2px;
+    width: 100%;
+    background-color: purple;
+}
+
+
+#login-popup{
+  width: 300px;
+  align-content: space-around;
+  padding: 20px;
+  background-color: white;
+    position: absolute;
+    left: 65%;
+    visibility: hidden;
+}
+
+#login-popup:hover{
+    cursor: pointer;
+}
+
+#login-popup>form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#login-popup>form>input{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 0.5px solid black;
+    border-radius: 4px;
+}
+
+#login-popup>form>input[type="submit"]{
+    background-color: black;
+    color: aliceblue;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#login-popup>form>input[type="submit"]:hover{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
