@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+
+
+#register-form{
+    width: 28%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  form>input{
+    padding: 10px;
+     margin: 15px 0px;
+  }
+
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+  }
+  
+  input[type=number] {
+    -moz-appearance: textfield;
+  }

@@ -1,0 +1,25 @@
+
+footer{
+    display: flex;
+    padding: 30px;
+ }
+ 
+ footer>div{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+ }
+ 
+ footer img{
+    width: 40px;
+ }
+
+ #social{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
+
+ #social a{
+    padding: 5%;
+ }
