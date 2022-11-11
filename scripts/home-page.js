@@ -8,6 +8,11 @@ loginForm.addEventListener("submit", (e)=>{
   let pass = document.querySelector("#log-pass").value;
   userDetails1.forEach((elem) => {
     elem.email==Email && elem.password==pass ? 
-  alert("Log in Successful"):alert("Wrong Credentials");
+  alert("Hey "+elem.name+ "\n" + "Log in Successful! Happy Shppping"):alert("Wrong Credentials");
   });
+  });
+
+  let shopBtn = document.querySelector("#shopBtn-1");
+  shopBtn.addEventListener("click", function(){
+    window.location.href = "products.html"
   });

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Beauty Lab</title>
+    <title>Products | Beauty Lab®</title>
     <link rel="icon" type="image/x-icon" href="assets\beauty-lab_favicon.png" />
     <link rel="stylesheet" href="styles/top.css">
-    <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
-    
+      
     <div id="top">
         <!-- learn-more -->
       <div id="learn-more">
@@ -165,26 +166,101 @@
         </div>
         
       </div>
+      <hr>
 
-     
-       
-        <div id="register-form">
-            <h1>Fill your details</h1>
-            <form>
-                <label>Name</label>
-                <input type="text" id="name" placeholder="Name">
-                <label>Email</label>
-                <input type="email" id="email" placeholder="Email">
-                <label>Phone</label>
-                <input type="number" id="phone" placeholder="Phone">
-                <label>Password</label>
-                <input type="password"  id="pass" placeholder="Password">
-                <input type="submit" value="Submit" />
-              </form>
+      <!-- products -->
+      <div id="prod">
+        
+        <div id="filters">
 
-    </div>
+          <span>
+            <h3>Filter By Category</h3>
+            <hr>
+            <input type="checkbox" id="" value="hair">
+            <label>Hair</label>
+            <input type="checkbox" id="" value="skin">
+            <label>Skin</label>
+          </span>
+
+            <span>
+              <h3>Sort By Price</h3>
+              <hr>
+              <select name="" id="">
+                  <option value="">Select</option>
+                  <option value="htl">High to Low</option>
+                  <option value="lth">Low to High</option>
+              </select>  
+            </span>
+            
+            <span>
+              <h3>Sort By Ratings</h3>
+              <hr>
+              <select name="" id="">
+              <option value="">Select</option>
+              <option value="htl">High to Low</option>
+              <option value="lth">Low to High</option>
+              </select>
+            </span>
+            
+        </div>
+
+        <div id="products">
+            <!-- ALL PRODUCTS GOES HERE -->
+        </div>
+      </div>
+
+      <!-- footer -->
+      
+      <footer>
+        <div>
+          <div>
+            <h3>ABOUT Beauty Lab</h3>
+            <p>Press Room</p>
+            <p>Company Info</p>
+            <p>Executive Team</p>
+            <p>Careers</p>
+            <p>R+F Recycling Program</p>
+            <p>Blog</p>
+          </div>
+          <div>
+            <h3>HELP</h3>
+            <p>Product & Help Center</p>
+            <p>Shipping</p>
+            <p>Satisfaction Guarantee</p>
+            <p>Promotional Terms & Conditions</p>
+            <p>Beauty Lab FAQs</p>
+            <p>Klarna</p>
+            <p>Site Map</p>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div id="social">
+          <div>
+          <h2>Let's Get Social</h2>
+        </div>
+          <div>
+
+          <a href="https://www.linkedin.com/in/mohammad-mujaheed-a86801218" target="_blank"><img src="assets/2959749_facebook_icon.png" alt="">
+          </a>
+
+          <a href="https://instagram.com/mujaheed_13?igshid=YmMyMTA2M2Y=" target="_blank">
+            <img src="assets/2959748_instagram_photo_share_icon.png" alt="">
+          </a>
+
+          <a href="https://youtube.com/channel/UCGzO4S7hCq1Asp4_8LIDFtA" target="_blank">
+            <img src="assets/2959742_broadcast_google_streaming_video_youtube_icon.png" alt="">
+          </a>
+          
+          <a href="https://github.com/mujaheed13" target="_blank">
+            <img src="assets/2959740_bird_news_tweet_twitter_icon.png" alt="">
+          </a>
+        </div>
+        </div>
+      </footer>
+
 </body>
-<script src="scripts/register.js"></script>
-<script src="scripts/home-page.js"></script>
 <script src="scripts/top.js"></script>
+<script src="scripts/products.js"></script>
+<script src="scripts/home-page.js"></script>
 </html>

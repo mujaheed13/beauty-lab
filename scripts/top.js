@@ -57,3 +57,8 @@ let logo = document.querySelector("#logo");
 logo.addEventListener("click", ()=>{
    window.location.href = "index.html";
 });
+
+let bag = document.querySelector("#bag");
+bag.addEventListener("click", ()=>{
+   window.location.href = "bag.html";
+});
