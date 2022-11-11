@@ -28,3 +28,12 @@ h1{
   input[type=number] {
     -moz-appearance: textfield;
   }
+
+  #register-form>form>input[type="submit"]{
+    background-color: black;
+    color: aliceblue;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 3px;
+}
+

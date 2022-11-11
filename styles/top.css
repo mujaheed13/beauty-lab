@@ -60,6 +60,7 @@ body{
     justify-content: space-around;
     font-size: 11px;
     padding: 12px 0px 0px 0px;
+
 }
 
 #nav>p{
@@ -86,15 +87,16 @@ body{
 
 #skincare, #haircare{
  display: flex;
+ visibility: hidden;
     justify-content: space-evenly;
     width: 100%;
     position: absolute;
     background-color: white;
     opacity: 90%;
     height: 0px;
-    visibility: hidden;
     transition: 1s;
     padding-bottom: 20px;
+    z-index: 2;
 }
 
 #skincare>div, #haircare>div{
@@ -131,13 +133,14 @@ body{
 
 
 #login-popup{
+    visibility: hidden;
   width: 300px;
   align-content: space-around;
   padding: 20px;
   background-color: white;
     position: absolute;
     left: 65%;
-    visibility: hidden;
+    z-index: 3;
 }
 
 #login-popup:hover{

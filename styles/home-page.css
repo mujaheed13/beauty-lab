@@ -41,6 +41,10 @@
     border-radius: 3px;
 }
 
+#shopBtn-1:hover{
+   box-shadow: rgba(255, 255, 255, 0.881) 0px 3px 8px;
+}
+
 #offers-section{
     margin: auto;
     margin-top: 40px;
