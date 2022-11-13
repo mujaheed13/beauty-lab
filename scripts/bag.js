@@ -108,3 +108,17 @@ function removeEl(data, i){
     displayProducts(cartData);
 };
 }
+
+
+let selectOpt = document.querySelector("#po");
+let orderBtn = document.querySelector("#order");
+orderBtn.addEventListener("click", ()=>{
+    
+    if(selectOpt.checked && cartData.length>=0){
+        alert("Congratulations! Your Order has been placed Successfully.")
+        localStorage.setItem("ordered-products", JSON.stringify(cartData));
+    } else {
+        alert("Select Payment Method");
+    }
+
+});
