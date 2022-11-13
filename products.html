@@ -24,7 +24,7 @@
       <div id="logo-section">
         <img href="index.html" id="logo" src="assets\beauty-lab_logo.png" alt="" />
         <div id="btns">
-        <p>Search
+        <p id="searchpop-btn">Search
           <svg
           xmlns="http://www.w3.org/2000/svg"
           height="14"
@@ -168,6 +168,24 @@
       </div>
       <hr>
 
+       <!-- Search -->
+       <div id="search-box">
+        <span>
+         <input id="search-input" type="text" placeholder="Search Products">
+         <svg id="searchlogo"
+           xmlns="http://www.w3.org/2000/svg"
+           height="18"
+           viewBox="0 0 18 18"
+           width="18"
+         >
+           <path d="M0 0h24v24H0z" fill="none" />
+           <path
+             d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+           />
+         </svg>
+        </span>
+       </div>
+
       <!-- products -->
       <div id="prod">
         
@@ -176,16 +194,18 @@
           <span>
             <h3>Filter By Category</h3>
             <hr>
-            <input type="checkbox" id="" value="hair">
-            <label>Hair</label>
-            <input type="checkbox" id="" value="skin">
-            <label>Skin</label>
+            <select name="" id="filter-by-category">
+              <option value="">Select</option>
+              <option value="hair">Hair</option>
+              <option value="skin">Skin</option>
+          </select>  
+           
           </span>
 
             <span>
               <h3>Sort By Price</h3>
               <hr>
-              <select name="" id="">
+              <select name="" id="sort-by-price">
                   <option value="">Select</option>
                   <option value="htl">High to Low</option>
                   <option value="lth">Low to High</option>
@@ -195,7 +215,7 @@
             <span>
               <h3>Sort By Ratings</h3>
               <hr>
-              <select name="" id="">
+              <select name="" id="sort-by-ratings">
               <option value="">Select</option>
               <option value="htl">High to Low</option>
               <option value="lth">Low to High</option>
@@ -260,7 +280,7 @@
       </footer>
 
 </body>
+<script src="scripts/home-page.js"></script>
 <script src="scripts/top.js"></script>
 <script src="scripts/products.js"></script>
-<script src="scripts/home-page.js"></script>
 </html>

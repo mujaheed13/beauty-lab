@@ -65,10 +65,19 @@
 }
 
 
-#products span{
+#products>span{
   display: flex;
   align-items: center;
   padding: 10px 0px;
   width: 60%;
   justify-content: space-evenly;
+  text-align: center;
+}
+
+select{
+  width: 70%;
+  margin: auto;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
 }

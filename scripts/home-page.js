@@ -7,8 +7,11 @@ loginForm.addEventListener("submit", (e)=>{
   let Email = document.querySelector("#log-email").value;
   let pass = document.querySelector("#log-pass").value;
   userDetails1.forEach((elem) => {
-    elem.email==Email && elem.password==pass ? 
-  alert("Hey "+elem.name+ "\n" + "Log in Successful! Happy Shppping"):alert("Wrong Credentials");
+    if(elem.email==Email && elem.password==pass){
+  alert("Hey "+elem.name+ "\n" + "Log in Successful! Happy Shppping") 
+    } else {
+      alert("Wrong Credentials");
+    }
   });
   });
 
