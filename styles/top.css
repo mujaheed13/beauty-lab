@@ -86,8 +86,8 @@ body{
 
 
 #skincare, #haircare{
- display: flex;
- visibility: hidden;
+    visibility: hidden;
+    display: flex;
     justify-content: space-evenly;
     width: 100%;
     position: absolute;
@@ -170,4 +170,37 @@ body{
 
 #login-popup>form>input[type="submit"]:hover{
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+/* searchBox */
+
+#search-box{
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20vh;
+    left: 35%;
+    width: 350px;
+    height: 15vh;
+    background-color: white;
+    padding: 1rem;
+    align-items: center;
+    background-color: rgb(212, 182, 205);
+    border-radius: 5px;
+    z-index: 3;
+}
+
+#search-box span{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#search-box input{
+    padding: 0.5rem;
+    width: 80%;
+}
+
+#searchlogo{
+    margin-top: 15px;
 }

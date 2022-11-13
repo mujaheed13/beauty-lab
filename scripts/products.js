@@ -189,6 +189,8 @@ let div = document.querySelector("#products");
 
 function displayProducts(data){
 
+    div.innerHTML = null;
+
     data.forEach((elem)=>{
         
     let div1 = document.createElement("div");
@@ -240,11 +242,62 @@ function addtoBag(data){
         if(cartProducts[i].id==data.id){
             alert("Product Already added to Bag");
             return;
-        } else {
-            alert("Product added to Bag");
-            return;
         }
     }
+    alert("Product Added to Bag")
     cartProducts.push({...data, quantity: 1});
     localStorage.setItem("cart-products", JSON.stringify(cartProducts));
 }
+
+let filterByCategory = document.querySelector("#filter-by-category");
+let sortByPrice = document.querySelector("#sort-by-price");
+let sortByRatings = document.querySelector("#sort-by-ratings");
+
+sortByRatings.addEventListener("change", ()=>{
+  if(sortByRatings.value == "lth"){
+    productsData.sort((a, b)=>{return a.rating - b.rating});
+  } else if(sortByRatings.value=="htl"){
+    productsData.sort((a, b)=>{return b.rating - a.rating});
+  } 
+  displayProducts(productsData);
+});
+
+
+sortByPrice.addEventListener("change", ()=>{
+    if(sortByPrice.value == "lth"){
+      productsData.sort((a, b)=>{return a.price - b.price});
+    } else if(sortByPrice.value=="htl"){
+      productsData.sort((a, b)=>{return b.price - a.price});
+    } 
+    displayProducts(productsData);
+  });
+
+  filterByCategory.addEventListener("change", ()=>{
+    if(filterByCategory.value===""){
+        displayProducts(productsData);
+    } else {
+        let filteredData  = productsData.filter((el)=>{
+            return  filterByCategory.value === el.category;
+        })
+        displayProducts(filteredData);
+    }
+  
+  });
+
+  
+let searchLogo = document.querySelector("#searchlogo");
+searchLogo.addEventListener("click", ()=>{
+
+  
+   let val = searchVal.value;
+
+   let newData = productsData.filter((el)=>{
+      return el.name.toLowerCase().includes(val.toLowerCase());
+   });
+   
+   displayProducts(newData);
+   searchBox.style.visibility = "visible";
+   
+});
+
+
